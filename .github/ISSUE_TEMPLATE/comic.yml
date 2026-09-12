@@ -1,0 +1,18 @@
+name: Publish a comic
+description: Attach your finished comic and send it live.
+title: '[comic] '
+body:
+  - type: textarea
+    id: image
+    attributes:
+      label: Comic
+      description: Attach exactly one PNG, JPEG, or WebP image. Only the repository owner can publish.
+    validations:
+      required: true
+  - type: textarea
+    id: transcript
+    attributes:
+      label: Transcript
+      description: Paste the dialogue or one sentence describing the comic, for screen readers.
+    validations:
+      required: true
